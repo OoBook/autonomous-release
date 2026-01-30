@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.3.1 - 2026-01-30
+
+### :wrench: Bug Fixes
+
+- update action.yml inputs and improve commit message formatting by @oguzhanbukcuoglu in https://github.com/OoBook/autonomous-release/commit/fb6ca32f58839a2b822f63479a841b8e08776fbd
+
+### :recycle: Refactors
+
+- rename project from 'Automated Release' to 'Autonomous Release' by @oguzhanbukcuoglu in https://github.com/OoBook/autonomous-release/commit/d42af1c7d9d2842aa1f34651f1a670c33dea385c
+
 ## v1.3.0 - 2025-05-12
 
 ### :wrench: Bug Fixes
