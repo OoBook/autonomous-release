@@ -1,9 +1,9 @@
-# Automated Release
+# Autonomous Release
 
-[![Main](https://img.shields.io/github/actions/workflow/status/oobook/automated-release/main.yml?label=build&logo=github-actions)](https://github.com/oobook/automated-release/actions?workflow=main)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/oobook/automated-release?label=release&logo=GitHub)](https://github.com/oobook/automated-release/releases)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/release-date/oobook/automated-release?label=release%20date&logo=GitHub)](https://github.com/oobook/automated-release/releases)
-![GitHub License](https://img.shields.io/github/license/oobook/automated-release)
+[![Main](https://img.shields.io/github/actions/workflow/status/oobook/autonomous-release/main.yml?label=build&logo=github-actions)](https://github.com/oobook/autonomous-release/actions?workflow=main)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/oobook/autonomous-release?label=release&logo=GitHub)](https://github.com/oobook/autonomous-release/releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/release-date/oobook/autonomous-release?label=release%20date&logo=GitHub)](https://github.com/oobook/autonomous-release/releases)
+![GitHub License](https://img.shields.io/github/license/oobook/autonomous-release)
 
 A GitHub action that creates a new release according to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#specification).
 
@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oobook/automated-release@v1
+      - uses: oobook/autonomous-release@v1
         id: release-generation
         with:
           gh-token: ${{ github.token }}
@@ -73,12 +73,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Tag
-      - uses: oobook/automated-tag
+      - uses: oobook/autonomous-tag
         id: tag-generation
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Release
-        uses: oobook/automated-release@v1
+        uses: oobook/autonomous-release@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           tag: "${{ steps.tag-generation.outputs.tag }}"
