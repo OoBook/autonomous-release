@@ -1,12 +1,12 @@
 {
-  "name": "automated",
+  "name": "autonomous-release",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/oobook/automated#readme",
+  "homepage": "https://github.com/oobook/autonomous-release#readme",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oobook/automated.git"
+    "url": "git+https://github.com/oobook/autonomous-release.git"
   },
   "scripts": {
     "local": "npx @github/local-action run ./ src/index.js .env",
